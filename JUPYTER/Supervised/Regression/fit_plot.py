@@ -15,7 +15,7 @@ n_samples = 30
 X = np.sort(np.random.rand(n_samples)*2)
 y = true_fun(X) + np.random.randn(n_samples) * 0.1
 
-def fit_plot(X, y, degrees, score=None):
+def fit_plot(X, y, true_fun, degrees, score=None):
     plt.figure(figsize=(14, 5))
     for i in range(len(degrees)):
         ax = plt.subplot(1, len(degrees), i + 1)
