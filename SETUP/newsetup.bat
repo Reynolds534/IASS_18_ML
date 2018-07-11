@@ -7,7 +7,7 @@ ECHO %_setuppath%
 "%_pythonpath%"\python.exe %_setuppath%\DownloadWheels.py
 "%_pythonpath%"\python.exe %_setuppath%\get-pip.py
 
-PATH=%PATH%;"%_pythonpath%"\Scripts
+PATH=%PATH%;%_pythonpath%\Scripts
 
 rem CD "%_setuppath%"
 pip install requests
