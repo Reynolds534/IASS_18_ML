@@ -1,0 +1,4 @@
+Numpy has been initiated successfully!
+Scipy has been initiated successfully!
+Scikit-learn has been initiated successfully!
+MySQL has been initiated successfully!.
