@@ -2,7 +2,7 @@ import numpy as np
 
 def generate_dataset(n_features):
     if n_features <6:
-        print 'Please enter a number of features strictly bigger than 5'
+        print('Please enter a number of features strictly bigger than 5')
         return None, None
     target = np.random.uniform(0,10,100)
     X1 = target**2 - target + np.random.uniform(0,25,100)

@@ -43,5 +43,7 @@ def KNN_plot(n_neighbors, x1=0, x2=1, metric='uniform'):
         plt.ylim(yy.min(), yy.max())
         plt.title("3-Class classification (k = %i, weights = '%s')"
                   % (n_neighbors, weights))
+        plt.xlabel('Feature '+str(x1+1))
+        plt.ylabel('Feature '+ str(x2+1))
 
     plt.show()
