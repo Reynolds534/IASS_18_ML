@@ -3,20 +3,20 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from sklearn import neighbors, datasets
 
-def KNN_plot_iris(n_neighbors, x1=0, x2=1, metric='uniform'):
+def KNN_plot_wine(n_neighbors, x1=0, x2=9, metric='uniform'):
     # import some data to play with
-    iris = datasets.load_iris()
+    wine = datasets.load_wine()
 
     # we only take the first two features. We could avoid this ugly
     # slicing by using a two-dim dataset
-    X = iris.data[:, [x1, x2]]
-    y = iris.target
+    X = wine.data[:, [x1, x2]]
+    y = wine.target
 
     h = .02  # step size in the mesh
 
     # Create color maps
-    cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])
-    cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
+    cmap_light = ListedColormap(['#aec7e8', '#ffbb78', '#98df8a' ])
+    cmap_bold = ListedColormap(['#1f77b4', '#ff7f0e', '#2ca02c'])
 
     for weights in [metric]:
         # we create an instance of Neighbours Classifier and fit the data.
