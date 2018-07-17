@@ -47,5 +47,5 @@ def plot_confusion_matrix(predicted, correct,
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    
+    plt.show()
     return cm
